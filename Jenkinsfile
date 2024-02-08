@@ -28,7 +28,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    sh "rsync -avhz $WORKSPACE /tmp"
+                    sh "rsync -avhz $WORKSPACE jenkins@10.0.0.75:/tmp"
                     sh "ssh jenkins@10.0.0.75 sudo -u chatapp /usr/local/bin/deploy.sh"
                     sh "curl http://54.80.18.121"
                 }
