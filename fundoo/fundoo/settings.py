@@ -13,7 +13,7 @@ SECRET_KEY = 'q484cut7o3)27rt(1qfke15g+dhy-i*cwj194ryfjxk3g)+2gu'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# AUTH_USER_MODEL = "fundooapp.user"
+
 
 ALLOWED_HOSTS = ['*']
 
@@ -149,6 +149,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
-# LOGIN_REDIRECT_URL = 'sign_in'
-# LOGOUT_REDIRECT_URL = 'logout'
+
+
 CSRF_COOKIE_SECURE = False
